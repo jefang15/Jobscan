@@ -5,7 +5,7 @@
 
 job_posting = """
 
-
+skills in java HTML c++ and ruby
 
 """
 
@@ -103,7 +103,7 @@ print(job_keywords_count)
 
 resume = """
 
-
+python java excel
 
 """
 
@@ -188,6 +188,7 @@ print(resume_keywords_count)
 
 " Step 9: Identify key words in job posting that are not in your resume "
 
+# TODO: can improve by using the job_keywords_count and resume_keywords_count variables, which are lists not dictionary.
 missing = {k: v for k, v in job_count.items() if k not in resume_count}
 missing_keywords = sorted(missing.items(), key=lambda x: x[1], reverse=True)
 print(missing_keywords)
