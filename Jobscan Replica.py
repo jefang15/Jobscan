@@ -5,7 +5,7 @@
 
 job_posting = """
 
-skills in java HTML c++ and ruby
+
 
 """
 
@@ -103,7 +103,7 @@ print(job_keywords_count)
 
 resume = """
 
-python java excel
+
 
 """
 
