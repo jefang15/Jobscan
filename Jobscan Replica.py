@@ -44,100 +44,46 @@ for i in clean_job_posting:
 
 common_job_words = [
 
-    'a',
-    'ability',
-    'about',
-    'added',
-    'against',
-    'an',
-    'and',
-    'any'
-    'are',
-    'as',
-    'assist',
-    'assisting',
-    'at',
+    'a', 'ability', 'about', 'added', 'against', 'an', 'and', 'any' 'are', 'as', 'assist', 'assisting', 'at',
 
-    'be',
-    'both',
-    'but',
-    'by',
+    'be', 'both', 'but', 'by',
 
     'can',
 
-    'demonstrate',
-    'demonstrated',
-    'duties'
+    'demonstrate', 'demonstrated', 'duties'
 
-    'employee',
-    'every',
-    'existing',
-    'experience',
+    'employee', 'every', 'existing', 'experience',
 
-    'following',
-    'for',
-    'from',
+    'following', 'for', 'from',
 
     'gpa',
 
     'have',
 
-    'in',
-    'including'
-    'identify',
-    'into',
-    'is',
-    'it',
+    'in', 'including', 'identify', 'into', 'is', 'it',
 
-    'make',
-    'members',
-    'more',
-    'must',
+    'make', 'members', 'more', 'must',
 
     'not',
 
-    'obtain',
-    'of',
-    'on',
-    'opportunity',
-    'or',
-    'other',
-    'our',
+    'obtain', 'of', 'on', 'opportunity', 'or', 'other', 'our',
 
     'preferred',
 
     'qualifications',
 
-    'reach',
-    'require',
-    'required',
+    'reach', 'require', 'required',
 
-    'skill',
-    'skills',
-    'strong',
-    'such',
-    'support',
-    'supporting',
+    'skill', 'skills', 'strong', 'such', 'support', 'supporting',
 
-    'that',
-    'the',
-    'their',
-    'this',
-    'to',
+    'that', 'the', 'their', 'this', 'to',
 
-    'upon',
-    'us',
-    'use',
-    'using',
+    'upon', 'us', 'use', 'using',
 
-    'we',
-    'will',
-    'with',
-    'work',
-    'working',
+    'we', 'will', 'with', 'work', 'working',
 
-    'you',
-    'your',
+    'you', 'your',
+
     ]
 
 
@@ -149,7 +95,6 @@ for key in list(job_count.keys()):
 
 job_keywords_count = sorted(job_count.items(), key=lambda x: x[1], reverse=True)
 print(job_keywords_count)
-
 
 
 
@@ -166,6 +111,7 @@ resume = """
 " Step 6: Remove punctuation from resume "
 
 resume_list = resume.split()  # Creates a list of words in your resume
+
 clean_resume = [  # Remove punctuation from resume
     word.replace(",", "")
         .replace("""""", "")
@@ -183,10 +129,10 @@ clean_resume = [  # Remove punctuation from resume
         .replace("(", "")
         .replace(")", "")
         .replace("•", "")
-    for line in resume_list for word in line.lower().split()
-    ]
+    for line in resume_list for word in line.lower().split()]
 
 resume_count = dict()
+
 for i in clean_resume:
     resume_count[i] = resume_count.get(i, 0) + 1
 
@@ -195,77 +141,37 @@ for i in clean_resume:
 # Feel free to add words to the list that appear frequently in your resume (e.g. cities you have worked in, your name, etc.)
 
 common_resume_words = [
-    '2014',
-    '2015',
-    '2016',
-    '2017',
-    '2018',
-    '2019',
-    '2020',
-    '2021',
-    '2022',
+    '2018', '2019', '2020', '2021', '2022',
 
-    'a',
-    'an',
-    'and',
-    'as',
+    'a', 'an', 'and', 'as',
 
-    'be',
-    'bloomington',
+    'be', 'bloomington',
 
-    'dc',
-    'december',
+    'dc', 'december',
 
-    'every',
-    'existing',
-    'experience',
+    'every', 'existing', 'experience',
 
-    'fang',
-    'from',
-    'for',
-
-    'gpa',
+    'from', 'for',
 
     'have',
 
-    'in',
-    'into',
-    'is',
-    'it',
+    'in', 'into', 'is', 'it',
 
     'may',
 
-    'obtain',
-    'of',
-    'on',
-    'opportunity',
-    'or',
-    'our',
+    'obtain', 'of', 'on', 'opportunity', 'or', 'our',
 
     'portland',
 
-    'spea',
-    'strong',
-    'support',
-    'supporting',
+    'spea', 'strong', 'support', 'supporting',
 
-    'that',
-    'the',
-    'their',
-    'to',
+    'that', 'the', 'their', 'to',
 
-    'university',
-    'us',
-    'use',
+    'university', 'us', 'use',
 
-    'washington',
-    'we',
-    'will',
-    'work',
-    'with',
+    'washington', 'we', 'will', 'work', 'with',
 
-    'you',
-    'your',
+    'you', 'your',
 
     ]
 
